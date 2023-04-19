@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <title>Könnyű feladvány</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="col-3"></div>
+        <div class="col-6 text-center">
+            <img src="img/konnyu1.png" alt="Bábuk helyzete: Játékos: király a8; királynő d8; bástya a5; ló d5; paraszt c3 | Ellenfél: ló b6; futó f4; bástya h7" class="text-center">
+            <div class="row">
+                    <select id="dropdown">
+                        <option value="bastya">Bástya</option>
+                        <option value="kiraly">Király</option>
+                        <option value="lo">Ló</option>
+                        <option value="paraszt">Paraszt</option>
+                        <option value="kiralyno">Királynő</option>
+                      </select>
+                      <script>
+                        const dropdown = document.getElementById('dropdown');
+                        input.addEventListener('input', () => {
+                          checkInput(input.value, dropdown);
+                        });
+                      </script>
+
+                <div>
+                    <input type="text" id="mezo">
+                    <script>
+                        const melyikMezore = document.getElementById('mezo');
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+
+    <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+    <script src="feladvanyellenorzo.js"></script>
+</body>
+</html>
