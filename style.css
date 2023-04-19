@@ -1,3 +1,7 @@
+body{
+    background: linear-gradient(0deg, rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url('img/table_background.jpg');
+    
+}
 .align-justify{
     text-align: justify;
 }
@@ -10,4 +14,7 @@
 }
 .text-indent{
     text-indent: 20px;
+}
+.carousel-bg{
+    background-color: rgba(0, 0, 0, .5);
 }
