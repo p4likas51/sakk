@@ -1,5 +1,7 @@
 body{
     background: linear-gradient(0deg, rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url('img/table_background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     
 }
 .align-justify{
@@ -10,7 +12,7 @@ body{
 }
 
 .navbar{
-    box-shadow: 1px 20px 30px #76797e;
+    box-shadow: 1px 5px 20px #76797e;
 }
 .text-indent{
     text-indent: 20px;
@@ -20,4 +22,7 @@ body{
 }
 .pieces{
     width: 50%!important;
+}
+a{
+    text-decoration: none !important; 
 }
