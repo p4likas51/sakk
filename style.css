@@ -4,6 +4,13 @@
 .nav-link:hover{
     text-decoration: underline;
 }
-.feladvanykartya{
-    width: 33%;
+
+.navbar{
+    box-shadow: 1px 20px 30px #76797e;
+}
+.text-indent{
+    text-indent: 20px;
+}
+.pieces{
+    width: 50%!important;
 }
