@@ -4,3 +4,7 @@
 .nav-link:hover{
     text-decoration: underline;
 }
+
+.navbar{
+    box-shadow: 1px 20px 30px #76797e;
+}
