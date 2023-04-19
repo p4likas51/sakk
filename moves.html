@@ -8,58 +8,204 @@
     <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
     <title>Lépések</title>
 </head>
-<body>
+<body class="container-fluid">
+    <nav class="navbar navbar-expand-md bg-dark rounded-bottom-2 navbar-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light">
+            <img src="img/gyalog_icon_white.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Sakk
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav mb-2 mb-md-0 ms-md-4">
+              <li class="nav-item px-lg-3">
+                <a class="nav-link active text-light" aria-current="page" href="#">Kezdőlap</a>
+              </li>
+              <li class="nav-item px-md-3">
+                <a class="nav-link text-light" href="moves.html">Lépések</a>
+              </li>
+              <li class="nav-item px-md-3">
+                <a class="nav-link text-light" href="#">Feladvány</a>
+              </li>
+              <li class="nav-item px-md-3">
+                <a class="nav-link text-light" href="#">Hírek</a>
+              </li>
+              <li class="nav-item px-md-3">
+                <a class="nav-link text-light" href="#">Jelentkezés</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <div class="container">
-        <h1 class="text-center">Játék szabályok</h1>
+        
+        <h1 class="text-center pt-5">Játék szabályok</h1>
 
         
         <h2>A lépések és a tábla ismerete</h2>
-        <img src="img/sakktábla.png" alt="sakktábla" title="sakktábla" width="400" height="390" class="mx-auto d-block mt-3 mb-3 float-end">
-        <table class="table col-12 col-md-6 pieces">
-            <thead>
-              <tr>
-                <th scope="col">Bábu</th>
-                <th scope="col">Jelölés</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><img src="img/BlackPawn.png" width="45" height="45" class="float-start"></td>
-                <td class="align-middle">Jellemzően csak a mező koordinátája betű nélkül (<i>pl.: e5</i>) és ez a parasztra utal</td>
-              </tr>
-              <tr>
-                <td><img src="img/BlackKnight.png" width="45" height="45" class="float-start"></td>
-                <td class="align-middle">N betű (<i>pl.: Nc5</i>) </td>
-              </tr>
-              <tr>
-                <td><img src="img/BlackBishop.png" width="45" height="45" class="float-start"></td>
-                <td class="align-middle">B betű (<i>pl.: Bb7</i>)</td>
-              </tr>
-              <tr>
-                <td><img src="img/BlackRook.png" width="45" height="45" class="float-start"></td>
-                <td class="align-middle">R betű (<i>pl.: Re8</i>)</td>
-              </tr>
-              <tr>
-                <td><img src="img/BlackQueen.png" width="45" height="45" class="float-start"></td>
-                <td class="align-middle">Q betű (<i>pl.: Qd2</i>)</td>
-              </tr>
-              <tr>
-                <td><img src="img/BlackKing.png" width="45" height="45" class="float-start align-baseline"></td>
-                <td class="align-middle">K betű (<i>pl.: Kh8</i>)</td>
-              </tr>
-            </tbody>
-        </table>
+        <div class="row">
+            <img src="img/sakktábla.png" alt="sakktábla" title="sakktábla" width="30%" height="30%" class=" col-12 col-md-5 mx-auto d-block mt-3 mb-3 me-5">
+            <table class="table col-12 col-md-6 pieces">
+                <thead>
+                  <tr>
+                    <th scope="col">Bábu</th>
+                    <th scope="col">Jelölés</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="img/BlackPawn.png" width="45" height="45" class="float-start"></td>
+                    <td class="align-middle">Jellemzően csak a mező koordinátája betű nélkül (<i>pl.: e5</i>) és ez a parasztra utal</td>
+                  </tr>
+                  <tr>
+                    <td><img src="img/BlackKnight.png" width="45" height="45" class="float-start"></td>
+                    <td class="align-middle">N betű (<i>pl.: Nc5</i>) </td>
+                  </tr>
+                  <tr>
+                    <td><img src="img/BlackBishop.png" width="45" height="45" class="float-start"></td>
+                    <td class="align-middle">B betű (<i>pl.: Bb7</i>)</td>
+                  </tr>
+                  <tr>
+                    <td><img src="img/BlackRook.png" width="45" height="45" class="float-start"></td>
+                    <td class="align-middle">R betű (<i>pl.: Re8</i>)</td>
+                  </tr>
+                  <tr>
+                    <td><img src="img/BlackQueen.png" width="45" height="45" class="float-start"></td>
+                    <td class="align-middle">Q betű (<i>pl.: Qd2</i>)</td>
+                  </tr>
+                  <tr>
+                    <td><img src="img/BlackKing.png" width="45" height="45" class="float-start"></td>
+                    <td class="align-middle">K betű (<i>pl.: Kh8</i>)</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+        
         
         <div class="row">
-            <p class="text-indent align-justify">
-                A sakkot egy 8x8-as táblán játszák. A mezők megkülönböztetésére általában egy világosabb és egy sötétebb szín szolgál, amelyeket pepita módon raknak egymás mellé a képen látható módon. A játék megértése és magyarázása szempontjábol fontos része az is hogy a tábla mezőit egyértelműen megkülönböztethetőek legyenek. Erre a tábla bal szélén lévő számok és az alján a betűk szolgálnak. Az egyes mezőket az adott betűvel és számmal kell megjelölni (<i>pl.: e5, c6, h8, stb...</i>). Továbbá minden bábunak van egy jelölő betűje a fenti táblázatnak megfelelően. Ha egy bábu leüt egy másikat akkor a lépést jelölő karaktersorozatban a bábu betűje és a mező koordinátája közé egy kis x-et kell tenni (<i>pl.: Nxe5, Qxd8</i>). Ha pedig egy bábuból 2 van fönt de mindkettővel lehetne az adott mezőre lépni akkor a betű után oda kell írni a koordinátáját (<i>pl.: Rh5a5: itt az első 3 karakter a bábut határozza meg a másik kettő a mezőt.</i>). Vannak még egyéb jelölések amelyekről később lesz szó.
+            <p class="text-indent align-justify mt-3">
+                A sakkot egy 8x8-as táblán játszák. A mezők megkülönböztetésére általában egy világosabb és egy sötétebb szín szolgál, amelyeket pepita módon raknak egymás mellé a képen látható módon. A játék megértése és magyarázása szempontjábol fontos része az is hogy a tábla mezőit egyértelműen megkülönböztethetőek legyenek. Erre a tábla bal szélén lévő számok és az alján a betűk szolgálnak. Az egyes mezőket az adott betűvel és számmal kell megjelölni (<i>pl.: e5, c6, h8, stb...</i>). Fontos kiemelni hogy a fehér bábukat mindig a1-től a betűkkel jelzett sor orányába kell felrakni. Továbbá minden bábunak van egy jelölő betűje a fenti táblázatnak megfelelően. Ha egy bábu leüt egy másikat akkor a lépést jelölő karaktersorozatban a bábu betűje és a mező koordinátája közé egy kis x-et kell tenni (<i>pl.: Nxe5, Qxd8</i>). Ha pedig egy bábuból 2 van fönt de mindkettővel lehetne az adott mezőre lépni akkor a betű után oda kell írni a koordinátáját (<i>pl.: Rh5a5: itt az első 3 karakter a bábut határozza meg a másik kettő a mezőt.</i>). Vannak még egyéb jelölések amelyekről később lesz szó.
             </p>
         </div>
         
         <h2>Lépések módjai</h2>
         
-        <img src="img/BlackKing.png" width="45" height="45" class="float-start">
-        <h3 class="mt-3">Paraszt</h3>
+        <img src="img/BlackPawn.png" width="45" height="45" class="float-start">
+        <h3 class="mt-3 mb-4">Paraszt</h3>
+        
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img src="img/pawnStart.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="img/pawnMove.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+            </div>
+        </div>
+        
+        
+        <div class="row">
+            <p class="text-indent align-justify mt-3">
+                A parasztokat a 2-es és 7-es sorba rakjuk föl. Minden játékos 8 paraszttal kezd. Ezek csak előre tudnak lépni egy mezőt. Viszont a kezdő helyükről akár 2 mezőt is lehet lépni. Viszont bábukat leütni csak átlósan előre tudnak ütni a bal oldali képen látható módon. Nekik főleg az a feladatuk hogy védelmet biztosítsanak a többi bábunak. De ne becsüljük alá őket. Ha elérik az utolsó sort akkor a királyon kívül egy bármilyen másik bábvá alakul át. Jellemzően királynővé alalkul de előfordulhatnak helyzetek ahol kedvezőb másikat választani.
+            </p>
+        </div>
+
+        <img src="img/BlackPawn.png" width="45" height="45" class="float-start">
+        <h3 class="mt-3 mb-4">Paraszt</h3>
+        
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img src="img/pawnStart.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="img/pawnMove.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+            </div>
+        </div>
+        
+        
+        <div class="row">
+            <p class="text-indent align-justify mt-3">
+                A parasztokat a 2-es és 7-es sorba rakjuk föl. Minden játékos 8 paraszttal kezd. Ezek csak előre tudnak lépni egy mezőt. Viszont a kezdő helyükről akár 2 mezőt is lehet lépni. Viszont bábukat leütni csak átlósan előre tudnak ütni a bal oldali képen látható módon. Nekik főleg az a feladatuk hogy védelmet biztosítsanak a többi bábunak. De ne becsüljük alá őket. Ha elérik az utolsó sort akkor a királyon kívül egy bármilyen másik bábvá alakul át. Jellemzően királynővé alalkul de előfordulhatnak helyzetek ahol kedvezőb másikat választani.
+            </p>
+        </div>
+
+        <img src="img/BlackPawn.png" width="45" height="45" class="float-start">
+        <h3 class="mt-3 mb-4">Paraszt</h3>
+        
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img src="img/pawnStart.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="img/pawnMove.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+            </div>
+        </div>
+        
+        
+        <div class="row">
+            <p class="text-indent align-justify mt-3">
+                A parasztokat a 2-es és 7-es sorba rakjuk föl. Minden játékos 8 paraszttal kezd. Ezek csak előre tudnak lépni egy mezőt. Viszont a kezdő helyükről akár 2 mezőt is lehet lépni. Viszont bábukat leütni csak átlósan előre tudnak ütni a bal oldali képen látható módon. Nekik főleg az a feladatuk hogy védelmet biztosítsanak a többi bábunak. De ne becsüljük alá őket. Ha elérik az utolsó sort akkor a királyon kívül egy bármilyen másik bábvá alakul át. Jellemzően királynővé alalkul de előfordulhatnak helyzetek ahol kedvezőb másikat választani.
+            </p>
+        </div>
+
+        <img src="img/BlackPawn.png" width="45" height="45" class="float-start">
+        <h3 class="mt-3 mb-4">Paraszt</h3>
+        
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img src="img/pawnStart.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="img/pawnMove.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+            </div>
+        </div>
+        
+        
+        <div class="row">
+            <p class="text-indent align-justify mt-3">
+                A parasztokat a 2-es és 7-es sorba rakjuk föl. Minden játékos 8 paraszttal kezd. Ezek csak előre tudnak lépni egy mezőt. Viszont a kezdő helyükről akár 2 mezőt is lehet lépni. Viszont bábukat leütni csak átlósan előre tudnak ütni a bal oldali képen látható módon. Nekik főleg az a feladatuk hogy védelmet biztosítsanak a többi bábunak. De ne becsüljük alá őket. Ha elérik az utolsó sort akkor a királyon kívül egy bármilyen másik bábvá alakul át. Jellemzően királynővé alalkul de előfordulhatnak helyzetek ahol kedvezőb másikat választani.
+            </p>
+        </div>
+
+        <img src="img/BlackPawn.png" width="45" height="45" class="float-start">
+        <h3 class="mt-3 mb-4">Paraszt</h3>
+        
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img src="img/pawnStart.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="img/pawnMove.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+            </div>
+        </div>
+        
+        
+        <div class="row">
+            <p class="text-indent align-justify mt-3">
+                A parasztokat a 2-es és 7-es sorba rakjuk föl. Minden játékos 8 paraszttal kezd. Ezek csak előre tudnak lépni egy mezőt. Viszont a kezdő helyükről akár 2 mezőt is lehet lépni. Viszont bábukat leütni csak átlósan előre tudnak ütni a bal oldali képen látható módon. Nekik főleg az a feladatuk hogy védelmet biztosítsanak a többi bábunak. De ne becsüljük alá őket. Ha elérik az utolsó sort akkor a királyon kívül egy bármilyen másik bábvá alakul át. Jellemzően királynővé alalkul de előfordulhatnak helyzetek ahol kedvezőb másikat választani.
+            </p>
+        </div>
+
+        <img src="img/BlackPawn.png" width="45" height="45" class="float-start">
+        <h3 class="mt-3 mb-4">Paraszt</h3>
+        
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img src="img/pawnStart.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="img/pawnMove.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+            </div>
+        </div>
+        
+        
+        <div class="row">
+            <p class="text-indent align-justify mt-3">
+                A parasztokat a 2-es és 7-es sorba rakjuk föl. Minden játékos 8 paraszttal kezd. Ezek csak előre tudnak lépni egy mezőt. Viszont a kezdő helyükről akár 2 mezőt is lehet lépni. Viszont bábukat leütni csak átlósan előre tudnak ütni a bal oldali képen látható módon. Nekik főleg az a feladatuk hogy védelmet biztosítsanak a többi bábunak. De ne becsüljük alá őket. Ha elérik az utolsó sort akkor a királyon kívül egy bármilyen másik bábvá alakul át. Jellemzően királynővé alalkul de előfordulhatnak helyzetek ahol kedvezőb másikat választani.
+            </p>
+        </div>
     </div>  <!-- container -->
     <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
 </body>
