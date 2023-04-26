@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,7 +34,7 @@
                 <a class="nav-link text-light" href="feladvany.html">Feladvány</a>
               </li>
               <li class="nav-item px-md-3">
-                <a class="nav-link text-light" href="#">Hírek</a>
+                <a class="nav-link text-light" href="hirek.html">Hírek</a>
               </li>
               <li class="nav-item px-md-3">
                 <a class="nav-link text-light" href="#">Jelentkezés</a>
@@ -43,7 +43,7 @@
           </div>
         </div>
       </nav>
-    <div class="container">
+    <div class="container rounded-2">
         
         <h1 class="text-center pt-5">Játék szabályok</h1>
 
@@ -243,8 +243,77 @@
         </p>
     </div>
 
+  </div>  <!-- container -->
 
-    </div>  <!-- container -->
+  <div class="container-fluid bg-dark rounded-top-2 row mx-auto mt-4 justify-content-around">
+    <div class="col-lg-3 my-5">
+      <h1 class="text-light text-center mb-5">Checkmate Co.</h1>
+      <h5 class="text-light text-center">Ha szeretnéd, hogy az email címedre elküldjük a jövőben lévő versenyeinket akkor ne habozz!</h5>
+      <div class="mt-4 d-flex justify-content-center">
+        <form action="#" id="footer-email">
+          <input type="email" id="email" name="email" class="footer-email rounded-2 py-2 px-4" placeholder="Írja be az email címét:">
+        </form>
+        <input class="btn btn-light ms-3" type="submit" value="Submit" form="footer-email">
+      </div>
+      </div>
+    
+
+
+    <div class="col-lg-3 my-auto">
+      <h2 class="text-light mb-5 text-center">Kapcsolat</h2>
+      <div class="d-flex align-items-center mx-auto">
+        <img src="img/email.png" class="email-icon me-2" alt="...">
+        <h5 class="text-light">schmitzhofer.pal@students.jedlik.eu</h5>
+      </div>
+      <div class="d-flex align-items-center my-4">
+        <img src="img/email.png" class="email-icon me-2" alt="...">
+        <h5 class="text-light">schmitzhofer.pal@students.jedlik.eu</h5>
+      </div>
+      <div class="d-flex align-items-center">
+        <img src="img/email.png" class="email-icon me-2" alt="...">
+        <h5 class="text-light">schmitzhofer.pal@students.jedlik.eu</h5>
+      </div>
+    </div>
+    
+    <div class="col-lg-3 my-auto">
+      <h2 class="text-light mb-5 text-center">Kapcsolat</h2>
+      <div class="d-flex align-items-center mx-auto">
+        <img src="img/email.png" class="email-icon me-2" alt="...">
+        <h5 class="text-light">schmitzhofer.pal@students.jedlik.eu</h5>
+      </div>
+      <div class="d-flex align-items-center my-4">
+        <img src="img/email.png" class="email-icon me-2" alt="...">
+        <h5 class="text-light">schmitzhofer.pal@students.jedlik.eu</h5>
+      </div>
+      <div class="d-flex align-items-center">
+        <img src="img/email.png" class="email-icon me-2" alt="...">
+        <h5 class="text-light">schmitzhofer.pal@students.jedlik.eu</h5>
+      </div>
+    </div>
+  </div>
+  <script>
+    let calcScrollValue = () => {
+      let scrollProgress = document.getElementById("progress");
+      let progressValue = document.getElementById("progress-value");
+      let pos = document.documentElement.scrollTop;
+      let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      let scrollValue = Math.round((pos * 100) / calcHeight);
+      if(pos > 100){
+        scrollProgress.style.display = "grid";
+      }
+      else{
+        scrollProgress.style.display = "none";
+      }
+      scrollProgress.addEventListener("click", () => {
+        document.documentElement.scrollTop = 0;
+      });
+      scrollProgress.style.background = `conic-gradient(#343a40 ${scrollValue}%, #adadad ${scrollValue}%)`;
+    };
+    
+    window.onscroll = calcScrollValue;
+    window.onload = calcScrollValue;
+
+  </script>
     <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
