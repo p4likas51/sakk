@@ -12,22 +12,19 @@
     <div class="container-fluid row">
         <div class="col-2"></div>
         <div class="col-8">
-            <p>
-                Feladat: Ön a <i>fehér</i> oldallal van, és az ellenfél királyát sakkhelyzetbe akarja hozni. Válassza ki a megfelelő bábut és lépést!
+            <p class="bg-primary">
+                Feladat: Ön a <i>fehér</i> oldallal van, és egy jó lehetőség adódik az ellenfél sakkhelyzetbe hozására. Találja ezt meg!
             </p>
-            <img src="img/konnyu2.png" alt="Bábuk helyzete: Játékos: paraszt a2 c5 g2 h2; király c1; ló b7 f4 | Ellenfél: paraszt c7 f7 g7 h7; király e8; bástya a8" class="">
+            <img src="img/konnyu2.png" alt="Bábuk helyzete: Játékos: gyalog a2 c5 g2 h2; ló b7 f4; király c1; futó f1 | Ellenfél: bástya a8; gyalog c7 f7 g7 h7; király e8" class="">
             <div class="row">
-                    <div class="dropdown">
-                    <select id="dropdown">
-                        <option value="ballo">Bal oldali ló</option>
-                        <option value="jobblo">Jobb oldali ló</option>
-                        <option value="futo">Futó</option>
-                        <option value="kiraly">Király</option>
-                    </select>
-                </div>
-                    <input type="text" id="mezo">
-                    <button onclick="konnyu2()" class="btn">
-                        Válasz végelgesítése
+                    <button onclick="alert('Jó válasz, sakkhelyzetbe hozta az ellenfelet')">
+                        futó b5
+                    </button>
+                    <button onclick="alert('Rossz válasz, ezzel nem hozta sakkhelyzetbe az ellenfelet')">
+                        jobb oldali ló e6
+                    </button>
+                    <button onclick="alert('Rossz válasz, habár sakkhelyzetbe hozta az ellenfelet, lovát azzal a lendülettel le is ütötte a fekete gyalog')">
+                        bal oldali ló d6
                     </button>
             </div>
         </div>
@@ -35,6 +32,5 @@
     </div>
 
     <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
-    <script src="feladvanyellenorzo.js"></script>
 </body>
 </html>
