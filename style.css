@@ -1,5 +1,6 @@
 body{
     background: linear-gradient(0deg, rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url('img/table_background.jpg');
+    background-attachment: fixed;
     
 }
 .align-justify{
@@ -10,7 +11,7 @@ body{
 }
 
 .navbar{
-    box-shadow: 1px 20px 30px #76797e;
+    box-shadow: 1px 5px 20px #76797e;
 }
 .text-indent{
     text-indent: 20px;
@@ -25,5 +26,33 @@ body{
     width: 50%;   
 }
 .container{
-    background: linear-gradient(0deg, rgba(255, 255, 255, .8), rgba(255, 255, 255, .8))
+    background: linear-gradient(0deg, rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
+}
+.email-icon{
+    width: 25px;
+    height: fit-content !important;
+    
+}
+#progress{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+#progress-value{
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: black;
 }
