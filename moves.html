@@ -9,7 +9,10 @@
     <title>Lépések</title>
 </head>
 <body class="container-fluid">
-    <nav class="navbar navbar-expand-md bg-dark rounded-bottom-2 navbar-dark sticky-top">
+  <div id="progress">
+    <span id="progress-value">&#x1F815;</span>
+  </div>  
+  <nav class="navbar navbar-expand-md bg-dark rounded-bottom-2 navbar-dark sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand text-light">
             <img src="img/gyalog_icon_white.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
@@ -22,13 +25,13 @@
             
             <ul class="navbar-nav mb-2 mb-md-0 ms-md-4">
               <li class="nav-item px-lg-3">
-                <a class="nav-link active text-light" aria-current="page" href="#">Kezdőlap</a>
+                <a class="nav-link active text-light" href="index.html">Kezdőlap</a>
               </li>
               <li class="nav-item px-md-3">
-                <a class="nav-link text-light" href="moves.html">Lépések</a>
+                <a class="nav-link text-light" aria-current="page" href="#">Lépések</a>
               </li>
               <li class="nav-item px-md-3">
-                <a class="nav-link text-light" href="#">Feladvány</a>
+                <a class="nav-link text-light" href="feladvany.html">Feladvány</a>
               </li>
               <li class="nav-item px-md-3">
                 <a class="nav-link text-light" href="#">Hírek</a>
@@ -101,111 +104,113 @@
                 <img src="img/pawnStart.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
             </div>
             <div class="col-12 col-md-6">
-                <img src="img/pawnMove.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+                <img src="img/pawnMove.png" alt="Paraszt lépés" title="Paraszt lépés"  class=" d-block mx-auto movePicture">
             </div>
         </div>
         
         
         <div class="row">
             <p class="text-indent align-justify mt-3">
-                A parasztokat a 2-es és 7-es sorba rakjuk föl. Minden játékos 8 paraszttal kezd. Ezek csak előre tudnak lépni egy mezőt. Viszont a kezdő helyükről akár 2 mezőt is lehet lépni. Viszont bábukat leütni csak átlósan előre tudnak ütni a bal oldali képen látható módon. Nekik főleg az a feladatuk hogy védelmet biztosítsanak a többi bábunak. De ne becsüljük alá őket. Ha elérik az utolsó sort akkor a királyon kívül egy bármilyen másik bábvá alakul át. Jellemzően királynővé alalkul de előfordulhatnak helyzetek ahol kedvezőb másikat választani.
+                A parasztokat a 2-es és 7-es sorba rakjuk föl. Minden játékos 8 paraszttal kezd. Ezek csak előre tudnak lépni egy mezőt. Viszont a kezdő helyükről akár 2 mezőt is lehet lépni. Viszont bábukat leütni csak átlósan előre tudnak a bal oldali képen látható módon. Nekik főleg az a feladatuk hogy védelmet biztosítsanak a többi bábunak. De ne becsüljük alá őket. Ha elérik az utolsó sort akkor a királyon kívül egy bármilyen másik bábvá alakul át. Jellemzően királynővé alalkul de előfordulhatnak helyzetek ahol kedvezőb másikat választani.
             </p>
         </div>
 
-        <img src="img/BlackPawn.png" width="45" height="45" class="float-start">
-        <h3 class="mt-3 mb-4">Paraszt</h3>
+        <img src="img/BlackKnight.png" width="45" height="45" class="float-start">
+        <h3 class="mt-2 mb-4">Ló</h3>
         
         <div class="row">
             <div class="col-12 col-md-6">
-                <img src="img/pawnStart.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+                <img src="img/knightStart.png" alt="Ló kezdő pozíció" title="Ló lépés"  class=" d-block mx-auto movePicture">
             </div>
             <div class="col-12 col-md-6">
-                <img src="img/pawnMove.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+                <img src="img/knightMove.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
             </div>
         </div>
         
         
         <div class="row">
             <p class="text-indent align-justify mt-3">
-                A parasztokat a 2-es és 7-es sorba rakjuk föl. Minden játékos 8 paraszttal kezd. Ezek csak előre tudnak lépni egy mezőt. Viszont a kezdő helyükről akár 2 mezőt is lehet lépni. Viszont bábukat leütni csak átlósan előre tudnak ütni a bal oldali képen látható módon. Nekik főleg az a feladatuk hogy védelmet biztosítsanak a többi bábunak. De ne becsüljük alá őket. Ha elérik az utolsó sort akkor a királyon kívül egy bármilyen másik bábvá alakul át. Jellemzően királynővé alalkul de előfordulhatnak helyzetek ahol kedvezőb másikat választani.
+                Lóból mindkét játékos 2-2-t kap kezdéskor amiket a képen látható módon helyezünk fel. Sajátos módon lehet vele lépni. Minden irányban csak jellegzetes L alakban képes lépni. 2 mezőt egy irányban majd egy rá erőleges irányban 1-et ahogy a képen is látszik. Viszont át tud menni más bábuk felett a tőbbivel ellentétben.  
             </p>
         </div>
 
-        <img src="img/BlackPawn.png" width="45" height="45" class="float-start">
-        <h3 class="mt-3 mb-4">Paraszt</h3>
+        <img src="img/BlackBishop.png" width="45" height="45" class="float-start">
+        <h3 class="mt-2 mb-4">Futó</h3>
         
         <div class="row">
             <div class="col-12 col-md-6">
-                <img src="img/pawnStart.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+                <img src="img/bishopStart.png" alt="Futó kezdő pozíció" title="Futó kezdő pozíció"  class=" d-block mx-auto movePicture">
             </div>
             <div class="col-12 col-md-6">
-                <img src="img/pawnMove.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+                <img src="img/bishopMove.png" alt="Futó lépés" title="Futó lépés"  class=" d-block mx-auto movePicture">
             </div>
         </div>
         
         
         <div class="row">
             <p class="text-indent align-justify mt-3">
-                A parasztokat a 2-es és 7-es sorba rakjuk föl. Minden játékos 8 paraszttal kezd. Ezek csak előre tudnak lépni egy mezőt. Viszont a kezdő helyükről akár 2 mezőt is lehet lépni. Viszont bábukat leütni csak átlósan előre tudnak ütni a bal oldali képen látható módon. Nekik főleg az a feladatuk hogy védelmet biztosítsanak a többi bábunak. De ne becsüljük alá őket. Ha elérik az utolsó sort akkor a királyon kívül egy bármilyen másik bábvá alakul át. Jellemzően királynővé alalkul de előfordulhatnak helyzetek ahol kedvezőb másikat választani.
+                A futóból a lóhoz hasonlóan 2-2-t kap mindkét játékos. A képen látható helyre kell őket fölhelyezni. Ezekkel a bábukkal csak átlósan lehet lépni. Érdemes megjegyezni. hogy ebből a tulajdonságukból adódóan csak egy színű mezőkön képesek mozogni, tehát minden játékosnak van egy fehér mezőn és egy fekete mezőn mozgó futója.
             </p>
         </div>
 
-        <img src="img/BlackPawn.png" width="45" height="45" class="float-start">
-        <h3 class="mt-3 mb-4">Paraszt</h3>
+        <img src="img/BlackRook.png" width="45" height="45" class="float-start">
+        <h3 class="mt-2 mb-4">Bástya</h3>
         
         <div class="row">
             <div class="col-12 col-md-6">
-                <img src="img/pawnStart.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+                <img src="img/rookStart.png" alt="Bástya kezdő pozíció" title="Bástya kezdő pozíció"  class=" d-block mx-auto movePicture">
             </div>
             <div class="col-12 col-md-6">
-                <img src="img/pawnMove.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+                <img src="img/rookMove.png" alt="Bástya lépés" title="Bástya lépés"  class=" d-block mx-auto movePicture">
             </div>
         </div>
         
         
         <div class="row">
             <p class="text-indent align-justify mt-3">
-                A parasztokat a 2-es és 7-es sorba rakjuk föl. Minden játékos 8 paraszttal kezd. Ezek csak előre tudnak lépni egy mezőt. Viszont a kezdő helyükről akár 2 mezőt is lehet lépni. Viszont bábukat leütni csak átlósan előre tudnak ütni a bal oldali képen látható módon. Nekik főleg az a feladatuk hogy védelmet biztosítsanak a többi bábunak. De ne becsüljük alá őket. Ha elérik az utolsó sort akkor a királyon kívül egy bármilyen másik bábvá alakul át. Jellemzően királynővé alalkul de előfordulhatnak helyzetek ahol kedvezőb másikat választani.
+                Bástyából is kettőt kap mindkét játékos. A tábla sarkaiba kell őket elhelyezni a képen látható módon. A bástyák csak egy adott sorban vagy oszlopban tudnak lépni a kép szerinti módon.
             </p>
         </div>
 
-        <img src="img/BlackPawn.png" width="45" height="45" class="float-start">
-        <h3 class="mt-3 mb-4">Paraszt</h3>
+        <img src="img/BlackQueen.png" width="45" height="45" class="float-start">
+        <h3 class="mt-2 mb-4">Királynő</h3>
         
         <div class="row">
             <div class="col-12 col-md-6">
-                <img src="img/pawnStart.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+                <img src="img/queenStart.png" alt="Királynő kezdő pozíció" title="Királynő kezdő pozíció"  class=" d-block mx-auto movePicture">
             </div>
             <div class="col-12 col-md-6">
-                <img src="img/pawnMove.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+                <img src="img/queenMove.png" alt="Királynő lépés" title="Királynő lépés"  class=" d-block mx-auto movePicture">
             </div>
         </div>
         
         
         <div class="row">
             <p class="text-indent align-justify mt-3">
-                A parasztokat a 2-es és 7-es sorba rakjuk föl. Minden játékos 8 paraszttal kezd. Ezek csak előre tudnak lépni egy mezőt. Viszont a kezdő helyükről akár 2 mezőt is lehet lépni. Viszont bábukat leütni csak átlósan előre tudnak ütni a bal oldali képen látható módon. Nekik főleg az a feladatuk hogy védelmet biztosítsanak a többi bábunak. De ne becsüljük alá őket. Ha elérik az utolsó sort akkor a királyon kívül egy bármilyen másik bábvá alakul át. Jellemzően királynővé alalkul de előfordulhatnak helyzetek ahol kedvezőb másikat választani.
+                A kirlynő a legértékesebb bábu, ebből a játékosok csak egyet kapnak, mert hát nem muszlimok találták ki. Ezeket egymással szemben kell elhelyezni úgy hogy olyan színű mezőn kezdjenek amely a saját színe, ahogy a képen is van. A királynő lépését tekintve a bástya és a futó keveréke, mert lehet vele átlósan, oszlopban és sorban lépni, ahogy a kép is mutatja.
             </p>
         </div>
 
-        <img src="img/BlackPawn.png" width="45" height="45" class="float-start">
-        <h3 class="mt-3 mb-4">Paraszt</h3>
+        <img src="img/BlackKing.png" width="45" height="45" class="float-start">
+        <h3 class="mt-2 mb-4">Király</h3>
         
         <div class="row">
             <div class="col-12 col-md-6">
-                <img src="img/pawnStart.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+                <img src="img/kingStart.png" alt="Király kezdő pozíció" title="Király kezdő pozíció"  class=" d-block mx-auto movePicture">
             </div>
             <div class="col-12 col-md-6">
-                <img src="img/pawnMove.png" alt="Paraszt kezdő pozíció" title="Paraszt kezdő pozíció"  class=" d-block mx-auto movePicture">
+                <img src="img/kingMove.png" alt="Király lépés" title="Kiráy lépés"  class=" d-block mx-auto movePicture">
             </div>
         </div>
         
         
         <div class="row">
             <p class="text-indent align-justify mt-3">
-                A parasztokat a 2-es és 7-es sorba rakjuk föl. Minden játékos 8 paraszttal kezd. Ezek csak előre tudnak lépni egy mezőt. Viszont a kezdő helyükről akár 2 mezőt is lehet lépni. Viszont bábukat leütni csak átlósan előre tudnak ütni a bal oldali képen látható módon. Nekik főleg az a feladatuk hogy védelmet biztosítsanak a többi bábunak. De ne becsüljük alá őket. Ha elérik az utolsó sort akkor a királyon kívül egy bármilyen másik bábvá alakul át. Jellemzően királynővé alalkul de előfordulhatnak helyzetek ahol kedvezőb másikat választani.
+                A király a legfontosabb bábu. Ezt semmilyen förülmények között nem szabad elveszteni. Ebből adódóan ebből is csak 1 van mindkét oldalon. Lépni ez is tud minden irányban de csak 1 mezőt. Ha ezt a bábut éppen egy másik támadja akkor kötelezően el kel llépni vele, mert ha nem teszzük ezt akkor az ellenfél le tudná ütni. 
             </p>
         </div>
+
+        <h3 class="mt-2 mb-4">Különleges lépések</h3>
     </div>  <!-- container -->
     <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
 </body>
