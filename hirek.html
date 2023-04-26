@@ -44,28 +44,56 @@
             </div>
           </nav>
 
-    <script>
-        let calcScrollValue = () => {
-          let scrollProgress = document.getElementById("progress");
-          let progressValue = document.getElementById("progress-value");
-          let pos = document.documentElement.scrollTop;
-          let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-          let scrollValue = Math.round((pos * 100) / calcHeight);
-          if(pos > 100){
-            scrollProgress.style.display = "grid";
-          }
-          else{
-            scrollProgress.style.display = "none";
-          }
-          scrollProgress.addEventListener("click", () => {
-            document.documentElement.scrollTop = 0;
-          });
-          scrollProgress.style.background = `conic-gradient(#343a40 ${scrollValue}%, #adadad ${scrollValue}%)`;
-        };
-        
-        window.onscroll = calcScrollValue;
-        window.onload = calcScrollValue;
-    </script>
+          
+          
+          
+          <div class="container-fluid bg-dark rounded-top-2 row mx-auto mt-4 justify-content-around">
+            <div class="col-xl-3 col-lg-6 my-2 my-lg-5">
+              <h2 class="text-light mb-lg-4 mb-2 text-center">Kapcsolat</h2>
+              <div class="d-flex align-items-center justify-content-center">
+                <img src="img/email.png" class="email-icon me-2" alt="...">
+                <h5 class="text-light">kovacs.peter@students.jedlik.eu</h5>
+              </div>
+              <div class="d-flex align-items-center my-4 justify-content-center">
+                <img src="img/email.png" class="email-icon me-2" alt="...">
+                <h5 class="text-light">pap.laszlo@students.jedlik.eu</h5>
+              </div>
+              <div class="d-flex align-items-center justify-content-center">
+                <img src="img/email.png" class="email-icon me-2" alt="...">
+                <h5 class="text-light">schmitzhofer.pal@students.jedlik.eu</h5>
+              </div>
+            </div>
+            
+            <div class="col-xl-3 col-lg-6 order-1 my-auto ">
+              <h2 class="text-light mb-lg-4 mb-2 text-center">Oldalak</h2>
+              <div class="d-flex align-items-center mb-2 justify-content-center">
+                <h5 class="text-light"><a href="moves.html" class="text-light">Lépések</a></h5>
+              </div>
+              <div class="d-flex align-items-center mb-2 justify-content-center">
+                <h5 class="text-light"><a href="feladvany.html" class="text-light">Feladvány</a></h5>
+              </div>
+              <div class="d-flex align-items-center mb-2 justify-content-center">
+                <h5 class="text-light"><a href="#" class="text-light">Hírek</a></h5>
+              </div>
+              <div class="d-flex align-items-center justify-content-center">
+                <h5 class="text-light"><a href="#" class="text-light">Jelentkezés</a></h5>
+              </div>
+            </div>
+      
+            <div class="col-xl-3 col-8 order-2 my-xl-auto mb-5">
+              <h1 class="text-light text-center mb-lg-4 mb-2">Checkmate Co.</h1>
+              <h5 class="text-light text-center">Ha szeretnéd, hogy az email címedre elküldjük a jövőben lévő versenyeinket akkor ne habozz!</h5>
+              <div class="mt-4 d-flex justify-content-center">
+                <form action="#" id="footer-email">
+                  <input type="email" id="email" name="email" class="footer-email rounded-2 py-2 px-4" placeholder="Írja be az email címét:">
+                </form>
+                <input class="btn btn-light ms-3" type="submit" value="Submit" form="footer-email">
+              </div>
+              </div>
+          </div>
+      
+       
+          <script src="scrollToTop.js"></script>
     <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
