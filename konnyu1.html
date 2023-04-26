@@ -13,22 +13,18 @@
         <div class="col-2"></div>
         <div class="col-8">
             <p class="bg-primary">
-                Feladat: Ön a <i>fekete</i> oldallal van, és királya jelenleg sakkhelyzetben van. Az ön dolga a megfelelő lépést kiválasztani, hogy e helyzet megszűnjön.
+                Feladat: Ön a <i>fekete</i> oldallal van, és királya jelenleg sakkhelyzetben van. Az ön dolga az, hogy szüntesse meg ezt a sakkhelyzetet, és profitáljon a szituációból.
             </p>
             <img src="img/konnyu1.png" alt="Bábuk helyzete: Játékos: király a8; királynő d8; bástya a5; ló d5; paraszt c3 | Ellenfél: ló b6; futó f4; bástya h7" class="">
             <div class="row">
-                    <div class="dropdown">
-                    <select id="dropdown">
-                        <option value="bastya">Bástya</option>
-                        <option value="kiraly">Király</option>
-                        <option value="lo">Ló</option>
-                        <option value="paraszt">Paraszt</option>
-                        <option value="kiralyno">Királynő</option>
-                    </select>
-                </div>
-                    <input type="text" id="mezo">
-                    <button onclick="konnyu1()" class="btn">
-                        Válasz végelgesítése
+                    <button onclick="alert('Rossz válasz, nem szüntette meg a sakkhelyzetet')">
+                        ló f4
+                    </button>
+                    <button onclick="alert('Jó válasz, megmentette a királyt és leütötte ellenfele lovát')">
+                        ló b6
+                    </button>
+                    <button onclick="alert('Jó válasz, megmentette a királyt és leütötte ellenfele lovát')">
+                        királynő b6
                     </button>
             </div>
         </div>
@@ -36,6 +32,5 @@
     </div>
 
     <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
-    <script src="feladvanyellenorzo.js"></script>
 </body>
 </html>
