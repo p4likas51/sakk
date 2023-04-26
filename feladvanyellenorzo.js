@@ -1,23 +1,38 @@
 function konnyu1(){
   
-    result = ''
     var melyikMezore = document.getElementById('mezo');
     var dropdown = document.getElementById('dropdown');
 
-    if (dropdown.value == '' && melyikMezore.value == ''){
-        result = 'Kérem adjon meg egy bábut és egy mezőt!'
-    }
-    else if (dropdown.value == ''){
-        result = 'Kérem válasszon a lenyíló menüből!'
-    }
-    else if (melyikMezore.value == ''){
-        result = 'Kérem írjon be egy mezőt, melyre lépni kíván!'
-    }
-    if (melyikMezore = 'b6' && dropdown.value == 'kiralyno'){
-        result = 'Helyes válasz! Jól megoldotta a feladatot.'
+    if (melyikMezore.value === 'b6' && dropdown.value === 'kiralyno'){
+        console.log('Helyes válasz! Jól megoldotta a feladatot.')
     }
     else{
-        result = 'Rossz válasz :( Próbálja újra!'
+        console.log('Rossz válasz :( Próbálja újra!')
     }
 }
+
+function konnyu2(){
   
+    var melyikMezore = document.getElementById('mezo');
+    var dropdown = document.getElementById('dropdown');
+
+    console.log('gecifely')
+    if (melyikMezore.value === 'b5' && dropdown.value === 'futo'){
+        console.log('Helyes válasz! Jól megoldotta a feladatot.')
+    }
+    else{
+        console.log('Rossz válasz :( Próbálja újra!')
+    }
+}
+
+function konnyu3(){
+  
+    var melyikMezore = document.getElementById('mezo');
+
+    if (melyikMezore.value === 'c5'){
+        console.log('Helyes válasz! Jól megoldotta a feladatot.')
+    }
+    else{
+        console.log('Rossz válasz :( Próbálja újra!')
+    }
+}
