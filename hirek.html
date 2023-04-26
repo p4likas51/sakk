@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <title>hírek</title>
+</head>
+<body class="container-fluid">
+    <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
+      </div>  
+      <nav class="navbar navbar-expand-md bg-dark rounded-bottom-2 navbar-dark sticky-top">
+            <div class="container-fluid">
+              <a class="navbar-brand text-light">
+                <img src="img/gyalog_icon_white.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Sakk
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <ul class="navbar-nav mb-2 mb-md-0 ms-md-4">
+                  <li class="nav-item px-lg-3">
+                    <a class="nav-link active text-light" href="index.html">Kezdőlap</a>
+                  </li>
+                  <li class="nav-item px-md-3">
+                    <a class="nav-link text-light" aria-current="page" href="#">Lépések</a>
+                  </li>
+                  <li class="nav-item px-md-3">
+                    <a class="nav-link text-light" href="feladvany.html">Feladvány</a>
+                  </li>
+                  <li class="nav-item px-md-3">
+                    <a class="nav-link text-light" href="#">Hírek</a>
+                  </li>
+                  <li class="nav-item px-md-3">
+                    <a class="nav-link text-light" href="#">Jelentkezés</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+    <script>
+        let calcScrollValue = () => {
+          let scrollProgress = document.getElementById("progress");
+          let progressValue = document.getElementById("progress-value");
+          let pos = document.documentElement.scrollTop;
+          let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          let scrollValue = Math.round((pos * 100) / calcHeight);
+          if(pos > 100){
+            scrollProgress.style.display = "grid";
+          }
+          else{
+            scrollProgress.style.display = "none";
+          }
+          scrollProgress.addEventListener("click", () => {
+            document.documentElement.scrollTop = 0;
+          });
+          scrollProgress.style.background = `conic-gradient(#343a40 ${scrollValue}%, #adadad ${scrollValue}%)`;
+        };
+        
+        window.onscroll = calcScrollValue;
+        window.onload = calcScrollValue;
+    </script>
+    <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
