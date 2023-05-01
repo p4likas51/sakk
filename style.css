@@ -69,13 +69,27 @@ a:hover{
 .video-main-div{
     width: 80% !important;
 }
-.logo{
-    width: 15%;
-    border-radius: 50%;
-    border: solid 5px white;
+@media only screen and (max-width: 576px){
+    .logo{width: 100px;}
+}
+@media only screen and (min-width: 576px){
+    .logo{width: 25%;}
+}
+@media only screen and (min-width: 768px){
+    .logo{width: 20%;}
+}
+@media only screen and (min-width: 1400px){
+    .logo{width: 15%;}
 }
 #registration-main-div{
     padding-left: 2%;
+    width: 50%;
+}
+@media only screen and (max-width: 992px){
+    #registration-main-div{
+        width: 75%;
+        padding-left: 10%;
+    }
 }
 .form-input{
     width: 83%;
@@ -83,6 +97,15 @@ a:hover{
 .prize-logo{
     height: 9em !important;
 }
-.prize-img{
-    width: 92% !important;
+@media only screen and (max-width: 576px){
+    .prize-img{
+        width: 100% !important;
+        border: none !important;
+    }
+}
+@media only screen and (min-width: 576px){
+    .prize-img{width: 85% !important;}
+}
+@media only screen and (min-width: 992px){
+    .prize-img{width: 92% !important;}
 }
