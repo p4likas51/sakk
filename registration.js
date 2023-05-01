@@ -18,6 +18,8 @@ function validateForm() {
 
     document.getElementById("success-message").innerHTML = "Köszönjük a jelentkezését!<br>További információkról emailben értesítjük.";
     document.getElementById("registration-main-div").style.paddingLeft = 0;
+    document.getElementById("registration-main-div").style.width = "75%"
     document.getElementById("registration-form").style.display = "none";
+    document.getElementById("apply").style.display = "none";
     return false;
   }
