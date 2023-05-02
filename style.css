@@ -59,9 +59,12 @@ body{
 }
 a{
     text-decoration: none !important;
+    transition: text-shadow .5s !important;
 }
 a:hover{
     text-decoration: underline !important;
+    text-shadow: 0px 0px 7px #ffffff;
+
 }
 .video-main-div{
     width: 90% !important;
@@ -70,4 +73,62 @@ a:hover{
     border-color: black;
     border-radius: 1px;
     border-style: solid;
+}
+@media only screen and (max-width: 576px){
+    .logo{width: 100px;}
+}
+@media only screen and (min-width: 576px){
+    .logo{width: 25%;}
+}
+@media only screen and (min-width: 768px){
+    .logo{width: 22%;}
+}
+@media only screen and (min-width: 1200px){
+    .logo{width: 18%;}
+}
+@media only screen and (min-width: 1400px){
+    .logo{width: 15%;}
+}
+#registration-main-div{
+    padding-left: 2%;
+    width: 50%;
+}
+@media only screen and (max-width: 992px){
+    #registration-main-div{
+        width: 75%;
+        padding-left: 10%;
+    }
+}
+.form-input{
+    width: 83%;
+}
+.prize-logo{
+    height: 9em !important;
+}
+@media only screen and (max-width: 576px){
+    .prize-img{
+        width: 100% !important;
+        border: none !important;
+    }
+}
+@media only screen and (min-width: 576px){
+    .prize-img{width: 85% !important;}
+}
+@media only screen and (min-width: 992px){
+    .prize-img{width: 92% !important;}
+}
+@media only screen and (max-width: 1400px) {
+    .registration-header{
+        justify-content: space-around !important;
+    }    
+}
+@media only screen and (min-width: 1400px) {
+    .registration-header{
+        justify-content: center !important;
+    }    
+}
+
+#green_tick{
+    display: none;
+    width: 20%;
 }

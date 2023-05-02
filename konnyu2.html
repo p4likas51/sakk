@@ -6,28 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
-    <title>Könnyű feladvány 2</title>
+    <title>Könnyű feladvány</title>
 </head>
 <body>
-    <div class="container-fluid row">
+    <nav class="navbar navbar-expand-md bg-dark rounded-bottom-2 navbar-dark">
+        <div class="container-fluid">
+          <p class="navbar-brand text-light m-0">
+            <img src="img/gyalog_icon_white.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Checkmate
+          </p>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav mb-2 mb-md-0 ms-md-4">
+              <li class="nav-item px-lg-3">
+                <a class="nav-link active text-light" aria-current="page" href="#">Kezdőlap</a>
+              </li>
+              <li class="nav-item px-md-3">
+                <a class="nav-link text-light" href="moves.html">Lépések</a>
+              </li>
+              <li class="nav-item px-md-3">
+                <a class="nav-link text-light" href="feladvany.html">Feladvány</a>
+              </li>
+              <li class="nav-item px-md-3">
+                <a class="nav-link text-light" href="#">Hírek</a>
+              </li>
+              <li class="nav-item px-md-3">
+                <a class="nav-link text-light" href="apply.html">Jelentkezés</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="row text-center container-fluid">
         <div class="col-2"></div>
-        <div class="col-8">
-            <p class="bg-primary">
+        <div class="col-8 shadow">
+            <p class="bg-dark text-light mt-3 rounded-3 shadow">
                 Feladat: Ön a <i>fehér</i> oldallal van, és egy jó lehetőség adódik az ellenfél sakkhelyzetbe hozására. Találja ezt meg!
             </p>
-            <img src="img/konnyu2.png" alt="Bábuk helyzete: Játékos: gyalog a2 c5 g2 h2; ló b7 f4; király c1; futó f1 | Ellenfél: bástya a8; gyalog c7 f7 g7 h7; király e8" class="">
-            <div class="row">
-                    <button onclick="alert('Jó válasz, sakkhelyzetbe hozta az ellenfelet')">
-                        futó b5
+            <img class="container-fluid" src="img/konnyu2.png" alt="Bábuk helyzete: Játékos: király c1; futó f1; ló b7 f4; paraszt a2 c5 g2 h2 | Ellenfél: király e8; bástya a8; paraszt c7 f7 g7 h7">
+                    <button onclick="alert('Jó válasz, sakkhelyzetbe hozta az ellenfelet')" class="btn btn-dark mb-3 mt-3">
+                        futó f5
                     </button>
-                    <button onclick="alert('Rossz válasz, ezzel nem hozta sakkhelyzetbe az ellenfelet')">
-                        jobb oldali ló e6
-                    </button>
-                    <button onclick="alert('Rossz válasz, habár sakkhelyzetbe hozta az ellenfelet, lovát azzal a lendülettel le is ütötte a fekete gyalog')">
-                        bal oldali ló d6
-                    </button>
-            </div>
-        </div>
+                    <button onclick="alert('Rossz válasz, ezzel nem hozta sakkhelyzetbe az ellenfelet')" class="btn btn-dark mb-3 mt-3">
+                        jobb ló d5
+                    </button> 
+                    <button onclick="alert('Rossz válasz, habár sakkhelyzetbe hozta az ellenfelet, lovát azzal a lendülettel le is ütötte a fekete gyalog')" class="btn btn-dark mb-3 mt-3">
+                        bal ló d6
+                    </button> 
         <div class="col-2"></div>
     </div>
 
