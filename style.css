@@ -71,7 +71,12 @@ a:hover{
 
 }
 .video-main-div{
-    width: 80% !important;
+    width: 90% !important;
+}
+.moves{
+    border-color: black;
+    border-radius: 1px;
+    border-style: solid;
 }
 .shop{
     width: 80% !important;
