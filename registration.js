@@ -22,5 +22,6 @@ function validateForm() {
     document.getElementById("registration-form").style.display = "none";
     document.getElementById("apply").style.display = "none";
     document.getElementById("green_tick").style.display = "block"
+    document.getElementById("countdown").style.display = "none"
     return false;
   }
