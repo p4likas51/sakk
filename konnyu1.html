@@ -22,7 +22,7 @@
             
             <ul class="navbar-nav mb-2 mb-md-0 ms-md-4">
               <li class="nav-item px-lg-3">
-                <a class="nav-link active text-light" aria-current="page" href="#">Kezdőlap</a>
+                <a class="nav-link active text-light" aria-current="page" href="index.html">Kezdőlap</a>
               </li>
               <li class="nav-item px-md-3">
                 <a class="nav-link text-light" href="moves.html">Lépések</a>
@@ -31,7 +31,7 @@
                 <a class="nav-link text-light" href="feladvany.html">Feladvány</a>
               </li>
               <li class="nav-item px-md-3">
-                <a class="nav-link text-light" href="#">Hírek</a>
+                <a class="nav-link text-light" href="hirek.html">Hírek</a>
               </li>
               <li class="nav-item px-md-3">
                 <a class="nav-link text-light" href="apply.html">Jelentkezés</a>
@@ -46,7 +46,7 @@
             <p class="bg-dark text-light mt-3 rounded-3 shadow">
                 Feladat: Ön a <i>fekete</i> oldallal van, és királya jelenleg sakkhelyzetben van. Az ön dolga az, hogy szüntesse meg ezt a sakkhelyzetet, és profitáljon a szituációból.
             </p>
-            <img class="container-fluid" src="img/konnyu1.png" alt="Bábuk helyzete: Játékos: király a8; királynő d8; ló d5; bástya a5; paraszt c3 | Ellenfél: futó f4; ló b6; bástya h7">
+            <img class="container-fluid" src="img/konnyu1.png"  title="Bábuk helyzete: Játékos: király a8; királynő d8; ló d5; bástya a5; paraszt c3 | Ellenfél: futó f4; ló b6; bástya h7" alt="Bábuk helyzete: Játékos: király a8; királynő d8; ló d5; bástya a5; paraszt c3 | Ellenfél: futó f4; ló b6; bástya h7">
                     <button onclick="alert('Rossz válasz, nem szüntette meg a sakkhelyzetet')" class="btn btn-dark mb-3 mt-3">
                         ló f4
                     </button>
@@ -55,10 +55,70 @@
                     </button> 
                     <button onclick="alert('Jó válasz, megmentette a királyt és leütötte ellenfele lovát')" class="btn btn-dark mb-3 mt-3">
                         királynő b6
-                    </button> 
+                    </button>
+            <div>
+              <a class="btn btn-danger mb-5" href="konnyu2.html">
+                Következő
+              </a>
+            </div>
+          </div>
         <div class="col-2"></div>
     </div>
 
+    <div class="container-fluid bg-dark rounded-top-2 row mx-auto mt-4 justify-content-around footer">
+      
+      <div class="col-xl-4 col-md-6 mt-3 mt-xl-5">
+        <h2 class="text-light mb-md-4 mb-2 text-center">Kapcsolat</h2>
+        <div class="contact-body mt-md-5 mt-xl-0">
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="img/email.png" class="email-icon me-3" alt="...">
+            <p class="text-light fs-5 mb-2"><a href="mailto: checkmate@info.com" class="text-light">checkmate@info.com</a></p>
+          </div>
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="img/phone.png" class="email-icon me-3" alt="...">
+            <p class="text-light fs-5 mb-2">+36 55 348 272</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-xl-4 col-md-6 mt-3 mt-xl-5 mb-md-3">
+        <h2 class="text-light mb-md-3 mb-2 text-center">Oldalak</h2>
+        <div class="d-flex justify-content-center">
+          <p class="text-light fs-5"><a href="moves.html" class="text-light">Lépések</a></p>
+        </div>
+        <div class="d-flex justify-content-center">
+          <p class="text-light fs-5"><a href="feladvany.html" class="text-light">Feladvány</a></p>
+        </div>
+        <div class="d-flex justify-content-center">
+          <p class="text-light fs-5"><a href="#" class="text-light">Hírek</a></p>
+        </div>
+        <div class="d-flex justify-content-center">
+          <p class="text-light fs-5"><a href="apply.html" class="text-light">Jelentkezés</a></p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-8 my-xl-auto mb-5">
+        <h1 class="text-light text-center mb-md-4 mb-2">Checkmate Co.</h1>
+        <p class="text-light text-center fs-5">Ha szeretnéd, hogy az email címedre elküldjük a jövőben lévő versenyeinket akkor ne habozz!</p>
+        <div class="mt-4 d-block d-sm-flex justify-content-center text-center">
+          <form action="#" id="footer-email">
+            <input type="email" id="email" name="email" class="footer-email rounded-2 py-2 px-sm-4" placeholder="Írja be az email címét:">
+          </form>
+          <input class="btn btn-light ms-sm-3 mt-3 mt-sm-0" type="submit" value="Elküldés" form="footer-email">
+        </div>
+        </div>
+        <div class="copyright text-light fs-5"> 
+          <p>&copy; 2023 Checkmate Co.</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800, anchorPlacement: 'top-bottom'
+    });
+  </script>
+    <script src="scrollToTop.js"></script>
     <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
