@@ -47,20 +47,37 @@
       </nav>
       
       <div class="bg-dark rounded-2 text-light mt-4 w-75 mx-auto overflow-hidden" id="tournament">
-        <div class="w-100 py-4">
-          <img src="img/chess_tounament_red.jpg" class="img-fluid logo d-block mx-auto border border-2 border-white rounded-circle" alt="">
+        <div class="w-100 pt-5 d-flex registration-header align-items-center">
+          <img src="img/chess_tounament_red.jpg" class="ms-4 ms-xxl-0 me-xxl-5 img-fluid logo border border-2 border-white rounded-circle" alt="">
+          <h1 class="d-none d-md-block text-center me-4 me-xxl-0 ms-xxl-5">Checkmate &nbsp; X &nbsp; Ferrari</h1>
+          <h1 class="d-block d-md-none text-center me-4 me-xxl-0 ms-xxl-5">
+            Checkmate<br>
+            X<br>
+            Ferrari
+          </h1>
         </div>
-        <!-- <div class="text-center">
-          <h1 class="tournament-name">CHECKMATE  X &nbsp; &nbsp; &nbsp; FERRARI</h1>
-        </div> -->
-        <div class="row">
+        
+        <!-- <div class="row">
             <div class="col"><h1 class="text-end">Checkmate</h1></div>
             <div class="col-1"><h1 class="text-center">X</h1></div>
             <div class="col"><h1>Ferrari</h1></div>
-        </div>
-        <div>
-          <p class="fs-5 m-5 text-center text-md-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, ipsam veritatis! Dolor corrupti exercitationem dignissimos repellendus illo. Tempore placeat praesentium quo, explicabo possimus dignissimos, nulla laboriosam perspiciatis excepturi aspernatur necessitatibus?
-          Provident quibusdam sequi, deleniti officia ab modi iusto obcaecati, ratione accusamus quo possimus ipsa sed quas, doloribus est dolores aut quidem? Dolorum quos quibusdam consectetur sequi laboriosam error hic non?</p>
+        </div> -->
+        <div class="m-5">
+          <p class="fs-5 text-center text-md-start">
+            Képzeld el, hogy a sakk szerelmesei ülnek össze egy fantasztikus versenyen, hogy megmutassák, milyen jól tudnak játszani. És most hihetetlen lehetőség van arra, hogy a Ferrari szponzorálásával te is részt vehess ebben az izgalmas eseményben!
+          </p>
+          <p class="fs-5 text-center text-md-start">
+            Nem számít, hogy milyen szinten játszol, vagy mennyire tapasztalt vagy a sakk terén, ez a verseny mindenki számára nyitott. Ez az esemény arról szól, hogy a sakk iránt érdeklődő emberek találkozzanak, és együtt élvezzék a játék izgalmait.
+          </p>
+          <p class="fs-5 text-center text-md-start">
+            A Ferrari mindig is az elegancia, a sebesség és a teljesítmény megtestesítője volt. Most azonban a sakk világában is támogatja azokat, akik szeretik ezt a fantasztikus   játékot. A verseny arra is lehetőséget ad, hogy közelebbről megismerjük a Ferrari értékeit és azokat a tulajdonságokat, amik miatt az autóik a legjobbak.
+          </p>
+          <p class="fs-5 text-center text-md-start">
+            Ez az esemény tökéletes lehetőség arra, hogy megmutasd a tudásodat a sakkban, és egyben megismerkedj a Ferrari világával is. Ez nem csak a sakk szerelmeseinek, de azoknak is fantasztikus élményt nyújt, akik szeretik a sportot és az autókat.
+          </p>
+          <p class="fs-5 text-center text-md-start">
+            Tehát, ha szereted a sakkot és a Ferrarit, akkor ne hagyd ki ezt az izgalmas lehetőséget! Jelentkezz a Ferrari által szponzorált sakkversenyre, és éld át a játék és a sebesség izgalmait egy fantasztikus eseményen!
+          </p>
         </div>
         <h1 class="text-center mb-4">Nyereményeink</h1>
         <div class="row mb-5" data-aos="zoom-in">
@@ -105,6 +122,7 @@
 
         <div data-aos="zoom-in">
           <h1 class="text-center" id="apply">Jelentkezés</h1>
+          <h1 id="countdown" class="text-center"></h1>
           <div class="mx-auto" id="registration-main-div">
             <form id="registration-form" name="registration" onsubmit="return validateForm()" method="post">
               <div class="py-4">
@@ -141,6 +159,7 @@
             </form>
             <h1 id="success-message" class="text-center py-4"></h1>
           </div>
+          <img src="img/green_tick.png" alt="zöld pipa" id="green_tick" class="mx-auto pb-4">
         </div>
       </div>
     
@@ -181,17 +200,17 @@
         <p class="text-light text-center fs-5">Ha szeretnéd, hogy az email címedre elküldjük a jövőben lévő versenyeinket akkor ne habozz!</p>
         <div class="mt-4 d-block d-sm-flex justify-content-center text-center">
           <form action="#" id="footer-email">
-            <input type="email" id="email" name="email" class="footer-email rounded-2 py-2 px-4" placeholder="Írja be az email címét:">
+            <input type="email" id="email" name="email" class="footer-email rounded-2 py-2 px-sm-4" placeholder="Írja be az email címét:">
           </form>
           <input class="btn btn-light ms-0 ms-sm-3 mt-3 mt-sm-0" type="submit" value="Elküldés" form="footer-email">
         </div>
         </div>
-        <div class="copyright text-light fs-5"> 
+        <div class="text-light fs-5"> 
           <p>&copy; 2023 Checkmate Co.</p>
         </div>
     </div>
 
-    
+    <script src="countdown.js"></script>
     <script src="registration.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

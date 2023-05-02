@@ -21,5 +21,6 @@ function validateForm() {
     document.getElementById("registration-main-div").style.width = "75%"
     document.getElementById("registration-form").style.display = "none";
     document.getElementById("apply").style.display = "none";
+    document.getElementById("green_tick").style.display = "block"
     return false;
   }
