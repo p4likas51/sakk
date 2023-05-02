@@ -1,3 +1,7 @@
+@font-face{
+    font-family: tournament_title;
+    src: url('img/tournament_title_font.otf');
+}
 body{
     background: linear-gradient(0deg, rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url('img/table_background.jpg');
     background-attachment: fixed;
@@ -69,6 +73,9 @@ a:hover{
 .video-main-div{
     width: 80% !important;
 }
+.shop{
+    width: 80% !important;
+}
 @media only screen and (max-width: 576px){
     .logo{width: 100px;}
 }
@@ -100,6 +107,11 @@ a:hover{
 .prize-logo{
     height: 9em !important;
 }
+.tournament-title{
+    font-family: tournament_title;
+    text-shadow: 3px 4px black !important;
+    font-size: 4vw;
+}
 @media only screen and (max-width: 576px){
     .prize-img{
         width: 100% !important;
@@ -112,18 +124,20 @@ a:hover{
 @media only screen and (min-width: 992px){
     .prize-img{width: 92% !important;}
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1200px) {
     .registration-header{
         justify-content: space-around !important;
     }    
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1200px) {
     .registration-header{
         justify-content: center !important;
     }    
 }
-
 #green_tick{
     display: none;
     width: 20%;
+}
+.shop{
+    width: 80 !important;
 }
