@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <title>Nehéz feladvány</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark rounded-bottom-2 navbar-dark">
+        <div class="container-fluid">
+          <p class="navbar-brand text-light m-0">
+            <img src="img/gyalog_icon_white.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Checkmate
+          </p>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav mb-2 mb-md-0 ms-md-4">
+              <li class="nav-item px-lg-3">
+                <a class="nav-link active text-light" aria-current="page" href="index.html">Kezdőlap</a>
+              </li>
+              <li class="nav-item px-md-3">
+                <a class="nav-link text-light" href="moves.html">Lépések</a>
+              </li>
+              <li class="nav-item px-md-3">
+                <a class="nav-link text-light" href="feladvany.html">Feladvány</a>
+              </li>
+              <li class="nav-item px-md-3">
+                <a class="nav-link text-light" href="hirek.html">Hírek</a>
+              </li>
+              <li class="nav-item px-md-3">
+                <a class="nav-link text-light" href="apply.html">Jelentkezés</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="row text-center container-fluid">
+        <div class="col-2"></div>
+        <div class="col-8 shadow">
+            <p class="bg-dark text-light mt-3 rounded-3 shadow">
+                Feladat: Ön a fehér oldallal van, és 2 lépésből mattot adhat a fekete oldalnak. Találja meg ennek első lépését!
+            </p>
+            <img class="container-fluid" src="img/nehez3.png"  title="Játékos: király b1; futó c4; bástya d1 d7; gyalog a2 b2 c2 g2 h2 | Ellenfél: király g8; királynő g6; bástya a8; gyalog a6 b5 c5 e6 f7 g7 h7" alt="Játékos: király b1; futó c4; bástya d1 d7; gyalog a2 b2 c2 g2 h2 | Ellenfél: király g8; királynő g6; bástya a8; gyalog a6 b5 c5 e6 f7 g7 h7">
+                    <button onclick="alert('Téves, a feladatnak van megoldása')" class="btn btn-dark mb-3 mt-3">
+                        Nincs megoldása a feladatnak
+                    </button>
+                    <button onclick="alert('Pontosan, szép munka')" class="btn btn-dark mb-3 mt-3">
+                        felső bástya d8
+                    </button> 
+                    <button onclick="alert('Sajnos ez nem talált')" class="btn btn-dark mb-3 mt-3">
+                        futó d3
+                    </button>
+                    <button onclick="alert('Sajnos ez nem talált')" class="btn btn-dark mb-3 mt-3">
+                        alsó bástya d6
+                    </button>
+                    <button onclick="alert('Sajnos ez nem talált')" class="btn btn-dark mb-3 mt-3">
+                        legbaloldali gyalog a4 
+                    </button>
+                    <button onclick="alert('Sajnos ez nem talált')" class="btn btn-dark mb-3 mt-3">
+                        alsó bástya d5
+                    </button>
+            <div>
+                <a class="btn btn-danger mb-5" onclick="alert('Nincs több feladat. Gratulálok, ha eddig eljutott!')">
+                  Vége
+                </a>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
