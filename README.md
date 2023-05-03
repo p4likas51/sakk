@@ -41,8 +41,6 @@
 
     A feladvány úgy működik, hogy ki kell választani a megfelelő bábut, és a kívánt lépés célpontját
     
-    Ha helyesen válaszol a felhasználó, akkor mehet a következő feladványra
-    
 ---
 
 ## Link: [Sakk](https://p4likas51.github.io/sakk)
